@@ -1,0 +1,12 @@
+# virtual environment
+.venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# editor settings
+.vscode/
+
+# work in progress, not ready to publish
+/pricer_it2.py
