@@ -83,8 +83,8 @@ if __name__ == "__main__":
     mc, se = mc_call(S0, K, r, sigma, T, n_paths, rng)
     diff = mc-bs
     sizes = [10**2,10**3,10**4,10**5,10**6]
-    print("The Black Scholes equation estimates the price to be $",round(bs,2))
-    print("Our Monte Carlo simulation estimates the price at $", round(mc,2))
+    print("The Black Scholes equation estimates the price to be $",round(bs,4))
+    print("Our Monte Carlo simulation estimates the price at $", round(mc,4))
     print("They have a difference of ", diff)
 
     print("Within 3 standard errors:", bool(np.abs(diff) < 3 * se))
